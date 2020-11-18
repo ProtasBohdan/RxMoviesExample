@@ -1,10 +1,11 @@
 RxMoviesExample
 
-#Tech stack
+# Tech stack
 - Swift, iOS >= 12
+- MVVM architecture with reacvive binding
+- Dependencies: RxSwift, RxCocoa, Kingfisher 
+- CocoaPods dependency manager
 
-#Dependencies
-    RxSwift, RxCocoa, Kingfisher
-    Dependency managed: Cocoapods
-    
-Paradigm: Reactive
+# Setup
+- Clone project
+- pod install
