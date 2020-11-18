@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5319BC7954FD905CAA89BFD3 /* Pods_RxMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D5D303A7CA3736E88A68E5 /* Pods_RxMovies.framework */; };
 		B8ADD85725651373000F17F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADD85625651373000F17F0 /* AppDelegate.swift */; };
-		B8ADD85B25651373000F17F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADD85A25651373000F17F0 /* ViewController.swift */; };
 		B8ADD85E25651373000F17F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8ADD85C25651373000F17F0 /* Main.storyboard */; };
 		B8ADD86025651374000F17F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8ADD85F25651374000F17F0 /* Assets.xcassets */; };
 		B8ADD86325651374000F17F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8ADD86125651374000F17F0 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		B7FBBECACE87D03DE30CAE6F /* Pods-RxMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMovies.release.xcconfig"; path = "Target Support Files/Pods-RxMovies/Pods-RxMovies.release.xcconfig"; sourceTree = "<group>"; };
 		B8ADD85325651373000F17F0 /* RxMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8ADD85625651373000F17F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8ADD85A25651373000F17F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8ADD85D25651373000F17F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8ADD85F25651374000F17F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8ADD86225651374000F17F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,14 +67,29 @@
 		B8ADD85525651373000F17F0 /* RxMovies */ = {
 			isa = PBXGroup;
 			children = (
+				B8ADD879256516F0000F17F0 /* API */,
 				B8ADD85625651373000F17F0 /* AppDelegate.swift */,
-				B8ADD85A25651373000F17F0 /* ViewController.swift */,
 				B8ADD85C25651373000F17F0 /* Main.storyboard */,
+				B8ADD87525651660000F17F0 /* Supporting Files */,
+			);
+			path = RxMovies;
+			sourceTree = "<group>";
+		};
+		B8ADD87525651660000F17F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				B8ADD85F25651374000F17F0 /* Assets.xcassets */,
 				B8ADD86125651374000F17F0 /* LaunchScreen.storyboard */,
 				B8ADD86425651374000F17F0 /* Info.plist */,
 			);
-			path = RxMovies;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8ADD879256516F0000F17F0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		C60B544FC9888B79276E6988 /* Pods */ = {
@@ -85,7 +98,6 @@
 				CB37A0C3BEBFDE94FF27E97D /* Pods-RxMovies.debug.xcconfig */,
 				B7FBBECACE87D03DE30CAE6F /* Pods-RxMovies.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -203,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8ADD85B25651373000F17F0 /* ViewController.swift in Sources */,
 				B8ADD85725651373000F17F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8SL25HNRJ;
-				INFOPLIST_FILE = RxMovies/Info.plist;
+				INFOPLIST_FILE = "RxMovies//Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,7 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8SL25HNRJ;
-				INFOPLIST_FILE = RxMovies/Info.plist;
+				INFOPLIST_FILE = "RxMovies//Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
